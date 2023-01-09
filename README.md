@@ -13,5 +13,9 @@ minimalmodbus -> http://minimalmodbus.readthedocs.io<br>
 Restart your domoticz server.
 <br>
 <br>
-Tested on domoticz 3.9319
-
+Tested on domoticz 
+Version: 2022.2
+Build Hash: eea9db734
+Compile Date: 2022-11-05 13:05:35
+dzVents Version: 3.1.8
+Python Version: 3.7.3 
