@@ -48,7 +48,7 @@ class BasePlugin:
 
         self.rs485.mode = minimalmodbus.MODE_RTU
         devicecreated = []
-        Domoticz.Log("Eastron SDM630 Modbus plugin start")
+        Domoticz.Log("Eastron SDM230 Modbus plugin start")
         self.runInterval = int(Parameters["Mode3"]) * 1 
         if 1 not in Devices:
             Domoticz.Device(Name="Voltage L1", Unit=1,TypeName="Voltage",Used=0).Create()
@@ -257,12 +257,12 @@ class BasePlugin:
 
 
     def onStop(self):
-        Domoticz.Log("Eastron SDM630 Modbus plugin stop")
+        Domoticz.Log("Eastron SDM230 Modbus plugin stop")
 
     def onHeartbeat(self):
         self.runInterval -=1;
         if self.runInterval <= 0:
-            # Get data from SDM630
+            # Get data from SDM230
             try:
                  Volts_L1 = self.rs485.read_float(0, functioncode=4, numberOfRegisters=2)
                  Volts_L2 = self.rs485.read_float(2, functioncode=4, numberOfRegisters=2)
@@ -447,7 +447,7 @@ class BasePlugin:
 
 
             if Parameters["Mode6"] == 'Debug':
-                Domoticz.Log("Eastron SDM630 Modbus Data")
+                Domoticz.Log("Eastron SDM230 Modbus Data")
                 Domoticz.Log('Voltage L1: {0:.3f} V'.format(Volts_L1))
                 Domoticz.Log('Voltage L2: {0:.3f} V'.format(Volts_L2))
                 Domoticz.Log('Voltage L3: {0:.3f} V'.format(Volts_L3))
