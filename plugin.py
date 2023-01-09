@@ -52,19 +52,19 @@ class BasePlugin:
         self.runInterval = int(Parameters["Mode3"]) * 1 
         if 1 not in Devices:
             Domoticz.Device(Name="Voltage L1", Unit=1,TypeName="Voltage",Used=0).Create()
-        if 2 not in Devices:
-            Domoticz.Device(Name="Voltage L2", Unit=2,TypeName="Voltage",Used=0).Create()
-        if 3 not in Devices:
-            Domoticz.Device(Name="Voltage L3", Unit=3,TypeName="Voltage",Used=0).Create()
-        if 4 not in Devices:
-            Domoticz.Device(Name="Current L1,L2,L3", Unit=4,TypeName="Current/Ampere",Used=0).Create()
+#        if 2 not in Devices:
+#            Domoticz.Device(Name="Voltage L2", Unit=2,TypeName="Voltage",Used=0).Create()
+#        if 3 not in Devices:
+#            Domoticz.Device(Name="Voltage L3", Unit=3,TypeName="Voltage",Used=0).Create()
+#        if 4 not in Devices:
+#           Domoticz.Device(Name="Current L1,L2,L3", Unit=4,TypeName="Current/Ampere",Used=0).Create()
         if 5 not in Devices:
             Domoticz.Device(Name="Active Power L1", Unit=5,TypeName="Usage",Used=0).Create()
-        if 6 not in Devices:
-            Domoticz.Device(Name="Active Power L2", Unit=6,TypeName="Usage",Used=0).Create()
-        if 7 not in Devices:
-            Domoticz.Device(Name="Active Power L3", Unit=7,TypeName="Usage",Used=0).Create()
-        Options = { "Custom" : "1;VA"}
+#        if 6 not in Devices:
+#            Domoticz.Device(Name="Active Power L2", Unit=6,TypeName="Usage",Used=0).Create()
+#        if 7 not in Devices:
+#            Domoticz.Device(Name="Active Power L3", Unit=7,TypeName="Usage",Used=0).Create()
+#        Options = { "Custom" : "1;VA"}
 #        if 8 not in Devices:
 #            Domoticz.Device(Name="Apparent Power L1", Unit=8,TypeName="Custom",Used=0,Options=Options).Create()
 #        if 9 not in Devices:
@@ -73,11 +73,11 @@ class BasePlugin:
 #            Domoticz.Device(Name="Apparent Power L3", Unit=10,TypeName="Custom",Used=0,Options=Options).Create()
         if 11 not in Devices:
             Domoticz.Device(Name="Power Meter L1", Unit=11,TypeName="General",Subtype=0x1D,Used=0).Create()
-        if 12 not in Devices:
-            Domoticz.Device(Name="Power Meter L2", Unit=12,TypeName="General",Subtype=0x1D,Used=0).Create()
-        if 13 not in Devices:
-            Domoticz.Device(Name="Power Meter L3", Unit=13,TypeName="General",Subtype=0x1D,Used=0).Create()
-        Options = { "Custom" : "1;VAr"}
+#        if 12 not in Devices:
+#           Domoticz.Device(Name="Power Meter L2", Unit=12,TypeName="General",Subtype=0x1D,Used=0).Create()
+#        if 13 not in Devices:
+#            Domoticz.Device(Name="Power Meter L3", Unit=13,TypeName="General",Subtype=0x1D,Used=0).Create()
+#        Options = { "Custom" : "1;VAr"}
 #        if 14 not in Devices:
 #            Domoticz.Device(Name="Reactive Power L1", Unit=14,TypeName="Custom",Used=0,Options=Options).Create()
 #        if 15 not in Devices:
@@ -99,13 +99,13 @@ class BasePlugin:
 #            Domoticz.Device(Name="Phase Angle L3", Unit=22,TypeName="Custom",Used=0,Options=Options).Create()
 #        if 23 not in Devices:
 #            Domoticz.Device(Name="Average Line To Neutral Volts", Unit=23,TypeName="Voltage",Used=0).Create()
-        if 24 not in Devices:
-            Domoticz.Device(Name="Average Line Current", Unit=24,TypeName="Current (Single)",Used=0).Create()
-        if 25 not in Devices:
-            Domoticz.Device(Name="Sum of Line Currents", Unit=25,TypeName="Current (Single)",Used=0).Create()
-        if 26 not in Devices:
-            Domoticz.Device(Name="Total System Active Power", Unit=26,TypeName="Usage",Used=0).Create()
-        Options = { "Custom" : "1;VA"}
+#        if 24 not in Devices:
+#            Domoticz.Device(Name="Average Line Current", Unit=24,TypeName="Current (Single)",Used=0).Create()
+#        if 25 not in Devices:
+#            Domoticz.Device(Name="Sum of Line Currents", Unit=25,TypeName="Current (Single)",Used=0).Create()
+#        if 26 not in Devices:
+#            Domoticz.Device(Name="Total System Active Power", Unit=26,TypeName="Usage",Used=0).Create()
+#        Options = { "Custom" : "1;VA"}
 #        if 27 not in Devices:
 #            Domoticz.Device(Name="Total System Apparent Power", Unit=27,TypeName="Custom",Used=0,Options=Options).Create()
 #        Options = { "Custom" : "1;VAr"}
@@ -118,8 +118,8 @@ class BasePlugin:
 #        if 30 not in Devices:
 #            Domoticz.Device(Name="Total System Phase Angle", Unit=30,TypeName="Custom",Used=0,Options=Options).Create()
 #        Options = { "Custom" : "1;Hz"}
-        if 31 not in Devices:
-            Domoticz.Device(Name="Frequency of supply voltages", Unit=31,TypeName="Custom",Used=0,Options=Options).Create()
+#        if 31 not in Devices:
+#            Domoticz.Device(Name="Frequency of supply voltages", Unit=31,TypeName="Custom",Used=0,Options=Options).Create()
         if 32 not in Devices:
             Domoticz.Device(Name="Import Wh since last reset", Unit=32,Type=0x71,Subtype=0x0,Used=0).Create()
         if 33 not in Devices:
@@ -147,10 +147,10 @@ class BasePlugin:
 #        Options = { "Custom" : "1;VA"}
 #        if 41 not in Devices:
 #            Domoticz.Device(Name="Maximum total system VA demand", Unit=41,TypeName="Custom",Used=0,Options=Options).Create()
-        if 42 not in Devices:
-            Domoticz.Device(Name="Neutral current demand", Unit=42,TypeName="Current (Single)",Used=0).Create()
-        if 43 not in Devices:
-            Domoticz.Device(Name="Maximum neutral current demand", Unit=43,TypeName="Current (Single)",Used=0).Create()
+#        if 42 not in Devices:
+#            Domoticz.Device(Name="Neutral current demand", Unit=42,TypeName="Current (Single)",Used=0).Create()
+#        if 43 not in Devices:
+#            Domoticz.Device(Name="Maximum neutral current demand", Unit=43,TypeName="Current (Single)",Used=0).Create()
 #        if 44 not in Devices:
 #            Domoticz.Device(Name="Line 1 to Line 2 volts", Unit=44,TypeName="Voltage",Used=0).Create()
 #        if 45 not in Devices:
@@ -182,16 +182,16 @@ class BasePlugin:
 #            Domoticz.Device(Name="Total system power factor", Unit=57,TypeName="Custom",Used=0,Options=Options).Create()
         if 58 not in Devices:
             Domoticz.Device(Name="Phase 1 current demand", Unit=58,TypeName="Current (Single)",Used=0).Create()
-        if 59 not in Devices:
-            Domoticz.Device(Name="Phase 2 current demand", Unit=59,TypeName="Current (Single)",Used=0).Create()
-        if 60 not in Devices:
-            Domoticz.Device(Name="Phase 3 current demand", Unit=60,TypeName="Current (Single)",Used=0).Create()
+#        if 59 not in Devices:
+#            Domoticz.Device(Name="Phase 2 current demand", Unit=59,TypeName="Current (Single)",Used=0).Create()
+#        if 60 not in Devices:
+#            Domoticz.Device(Name="Phase 3 current demand", Unit=60,TypeName="Current (Single)",Used=0).Create()
         if 61 not in Devices:
             Domoticz.Device(Name="Maximum phase 1 current demand", Unit=61,TypeName="Current (Single)",Used=0).Create()
-        if 62 not in Devices:
-            Domoticz.Device(Name="Maximum phase 2 current demand", Unit=62,TypeName="Current (Single)",Used=0).Create()
-        if 63 not in Devices:
-            Domoticz.Device(Name="Maximum phase 3 current demand", Unit=63,TypeName="Current (Single)",Used=0).Create()
+#        if 62 not in Devices:
+#            Domoticz.Device(Name="Maximum phase 2 current demand", Unit=62,TypeName="Current (Single)",Used=0).Create()
+#        if 63 not in Devices:
+#            Domoticz.Device(Name="Maximum phase 3 current demand", Unit=63,TypeName="Current (Single)",Used=0).Create()
 #        if 64 not in Devices:
 #            Domoticz.Device(Name="Line 1 to line 2 volts THD", Unit=64,TypeName="General",Subtype=0x06,Used=0).Create()
 #        if 65 not in Devices:
@@ -205,25 +205,24 @@ class BasePlugin:
         Options = { "Custom" : "1;kVArh"}
 #        if 69 not in Devices:
 #            Domoticz.Device(Name="Total kVArh", Unit=69,TypeName="Custom",Used=0,Options=Options).Create()
-        if 70 not in Devices:
-            Domoticz.Device(Name="L1 import kWh", Unit=70,Type=0x71,Subtype=0x0,Used=0).Create()
-        if 71 not in Devices:
-            Domoticz.Device(Name="L2 import kWh", Unit=71,Type=0x71,Subtype=0x0,Used=0).Create()
-        if 72 not in Devices:
-            Domoticz.Device(Name="L3 import kWh", Unit=72,Type=0x71,Subtype=0x0,Used=0).Create()
-        if 73 not in Devices:
-            Domoticz.Device(Name="L1 export kWh", Unit=73,Type=0x71,Subtype=0x0,Used=0).Create()
-        if 74 not in Devices:
-            Domoticz.Device(Name="L2 export kWh", Unit=74,Type=0x71,Subtype=0x0,Used=0).Create()
-        if 75 not in Devices:
-            Domoticz.Device(Name="L3 export kWh", Unit=75,Type=0x71,Subtype=0x0,Used=0).Create()
-        if 76 not in Devices:
-            Domoticz.Device(Name="L1 total kWh", Unit=76,Type=0x71,Subtype=0x0,Used=0).Create()
-        if 77 not in Devices:
-            Domoticz.Device(Name="L2 total kWh", Unit=77,Type=0x71,Subtype=0x0,Used=0).Create()
-        if 78 not in Devices:
-            Domoticz.Device(Name="L3 total kWh", Unit=78,Type=0x71,Subtype=0x0,Used=0).Create()
-        Options = { "Custom" : "1;kVArh"}
+#        if 70 not in Devices:
+#            Domoticz.Device(Name="L1 import kWh", Unit=70,Type=0x71,Subtype=0x0,Used=0).Create()
+#        if 71 not in Devices:
+#            Domoticz.Device(Name="L2 import kWh", Unit=71,Type=0x71,Subtype=0x0,Used=0).Create()
+#           Domoticz.Device(Name="L3 import kWh", Unit=72,Type=0x71,Subtype=0x0,Used=0).Create()
+#        if 73 not in Devices:
+#            Domoticz.Device(Name="L1 export kWh", Unit=73,Type=0x71,Subtype=0x0,Used=0).Create()
+#        if 74 not in Devices:
+#            Domoticz.Device(Name="L2 export kWh", Unit=74,Type=0x71,Subtype=0x0,Used=0).Create()
+#        if 75 not in Devices:
+#            Domoticz.Device(Name="L3 export kWh", Unit=75,Type=0x71,Subtype=0x0,Used=0).Create()
+#        if 76 not in Devices:
+#            Domoticz.Device(Name="L1 total kWh", Unit=76,Type=0x71,Subtype=0x0,Used=0).Create()
+#        if 77 not in Devices:
+#            Domoticz.Device(Name="L2 total kWh", Unit=77,Type=0x71,Subtype=0x0,Used=0).Create()
+#        if 78 not in Devices:
+#            Domoticz.Device(Name="L3 total kWh", Unit=78,Type=0x71,Subtype=0x0,Used=0).Create()
+#        Options = { "Custom" : "1;kVArh"}
 #        if 79 not in Devices:
 #            Domoticz.Device(Name="L1 import kVArh", Unit=79,TypeName="Custom",Used=0,Options=Options).Create()
 #        Options = { "Custom" : "1;kVArh"}
@@ -250,8 +249,8 @@ class BasePlugin:
 #        Options = { "Custom" : "1;kVArh"}
 #        if 87 not in Devices:
 #            Domoticz.Device(Name="L3 total kVArh", Unit=87,TypeName="Custom",Used=0,Options=Options).Create()
-        if 88 not in Devices:
-            Domoticz.Device(Name="Total Power Meter", Unit=88,TypeName="General",Subtype=0x1D,Used=0).Create()
+#        if 88 not in Devices:
+#            Domoticz.Device(Name="Total Power Meter", Unit=88,TypeName="General",Subtype=0x1D,Used=0).Create()
 
 
 
@@ -356,18 +355,18 @@ class BasePlugin:
                 #Update devices
                  #Update devices
                 Devices[1].Update(0,str(Volts_L1))
-                Devices[2].Update(0,str(Volts_L2))
-                Devices[3].Update(0,str(Volts_L3))
-                Devices[4].Update(0,str(Current_L1)+";"+str(Current_L2)+";"+str(Current_L3))
+#                Devices[2].Update(0,str(Volts_L2))
+#                Devices[3].Update(0,str(Volts_L3))
+#                Devices[4].Update(0,str(Current_L1)+";"+str(Current_L2)+";"+str(Current_L3))
                 Devices[5].Update(0,str(Active_Power_L1))
-                Devices[6].Update(0,str(Active_Power_L2))
-                Devices[7].Update(0,str(Active_Power_L3))
+#                Devices[6].Update(0,str(Active_Power_L2))
+#                Devices[7].Update(0,str(Active_Power_L3))
 #                Devices[8].Update(0,str(Apparent_Power_L1))
 #                Devices[9].Update(0,str(Apparent_Power_L2))
 #                Devices[10].Update(0,str(Apparent_Power_L3))
                 Devices[11].Update(0,str(Active_Power_L1)+";"+str(Active_Power_L1))
-                Devices[12].Update(0,str(Active_Power_L2)+";"+str(Active_Power_L2))
-                Devices[13].Update(0,str(Active_Power_L3)+";"+str(Active_Power_L3))
+#                Devices[12].Update(0,str(Active_Power_L2)+";"+str(Active_Power_L2))
+#                Devices[13].Update(0,str(Active_Power_L3)+";"+str(Active_Power_L3))
 #                Devices[14].Update(0,str(Reactive_Power_L1))
 #                Devices[15].Update(0,str(Reactive_Power_L2))
 #                Devices[16].Update(0,str(Reactive_Power_L3))
@@ -378,14 +377,14 @@ class BasePlugin:
 #                Devices[21].Update(0,str(Phase_Angle_L2))
 #                Devices[22].Update(0,str(Phase_Angle_L3))
 #                Devices[23].Update(0,str(Average_line_to_neutral_volts))
-                Devices[24].Update(0,str(Average_line_current))
-                Devices[25].Update(0,str(Sum_of_line_current))#  
-                Devices[26].Update(0,str(Total_System_Active_Power))
+#                Devices[24].Update(0,str(Average_line_current))
+#                Devices[25].Update(0,str(Sum_of_line_current))#  
+#                Devices[26].Update(0,str(Total_System_Active_Power))
 #                Devices[27].Update(0,str(Total_System_Apparent_Power))
 #                Devices[28].Update(0,str(Total_System_Reactive_Power))
 #                Devices[29].Update(0,str(Total_System_Power_Factor))
 #                Devices[30].Update(0,str(Total_System_Phase_Angle))
-                Devices[31].Update(0,str(Frequency_Of_Supply_Voltages))
+#                Devices[31].Update(0,str(Frequency_Of_Supply_Voltages))
                 Devices[32].Update(0,str(Import_Wh_since_last_reset*1000))
                 Devices[33].Update(0,str(Export_Wh_since_last_reset*1000))
 #                Devices[34].Update(0,str(Import_VArh_since_last_reset))
@@ -396,8 +395,8 @@ class BasePlugin:
 #                Devices[39].Update(0,str(Maximum_total_system_power_demand))
 #                Devices[40].Update(0,str(Total_system_VA_demand))
 #                Devices[41].Update(0,str(Maximum_total_system_VA_demand))
-                Devices[42].Update(0,str(Neutral_current_demand))
-                Devices[43].Update(0,str(Maximum_neutral_current_demand))
+#                Devices[42].Update(0,str(Neutral_current_demand))
+#                Devices[43].Update(0,str(Maximum_neutral_current_demand))
 #                Devices[44].Update(0,str(Line_1_to_Line_2_volts))
 #                Devices[45].Update(0,str(Line_2_to_Line_3_volts))
 #                Devices[46].Update(0,str(Line_3_to_Line_1_volts))
@@ -413,26 +412,26 @@ class BasePlugin:
 #                Devices[56].Update(0,str(Average_line_current_THD))
 #                Devices[57].Update(0,str(Total_system_power_factor))
                 Devices[58].Update(0,str(Phase_1_current_demand))
-                Devices[59].Update(0,str(Phase_2_current_demand))
-                Devices[60].Update(0,str(Phase_3_current_demand))
+#               Devices[59].Update(0,str(Phase_2_current_demand))
+#               Devices[60].Update(0,str(Phase_3_current_demand))
                 Devices[61].Update(0,str(Maximum_phase_1_current_demand))
-                Devices[62].Update(0,str(Maximum_phase_2_current_demand))
-                Devices[63].Update(0,str(Maximum_phase_3_current_demand))
+#               Devices[62].Update(0,str(Maximum_phase_2_current_demand))
+#               Devices[63].Update(0,str(Maximum_phase_3_current_demand))
 #                Devices[64].Update(0,str(Line_1_to_line_2_volts_THD))
 #                Devices[65].Update(0,str(Line_2_to_line_3_volts_THD))
 #                Devices[66].Update(0,str(Line_3_to_line_1_volts_THD))
 #                Devices[67].Update(0,str(Average_line_to_line_volts_THD))
                 Devices[68].Update(0,str(Total_kwh*1000))
 #                Devices[69].Update(0,str(Total_kvarh))
-                Devices[70].Update(0,str(L1_import_kwh*1000))
-                Devices[71].Update(0,str(L2_import_kwh*1000))
-                Devices[72].Update(0,str(L3_import_kwh*1000))
-                Devices[73].Update(0,str(L1_export_kwh*1000))
-                Devices[74].Update(0,str(L2_export_kwh*1000))
-                Devices[75].Update(0,str(L3_export_kwh*1000))
-                Devices[76].Update(0,str(L1_total_kwh*1000))
-                Devices[77].Update(0,str(L2_total_kwh*1000))
-                Devices[78].Update(0,str(L3_total_kwh*1000))
+#                Devices[70].Update(0,str(L1_import_kwh*1000))
+#                Devices[71].Update(0,str(L2_import_kwh*1000))
+#                Devices[72].Update(0,str(L3_import_kwh*1000))
+#                Devices[73].Update(0,str(L1_export_kwh*1000))
+#                Devices[74].Update(0,str(L2_export_kwh*1000))
+#                Devices[75].Update(0,str(L3_export_kwh*1000))
+#                Devices[76].Update(0,str(L1_total_kwh*1000))
+#                Devices[77].Update(0,str(L2_total_kwh*1000))
+#                Devices[78].Update(0,str(L3_total_kwh*1000))
 #                Devices[79].Update(0,str(L1_import_kvarh))
 #                Devices[80].Update(0,str(L2_import_kvarh))
 #                Devices[81].Update(0,str(L3_import_kvarh))
@@ -442,7 +441,7 @@ class BasePlugin:
 #                Devices[85].Update(0,str(L1_total_kvarh))
 #                Devices[86].Update(0,str(L2_total_kvarh))
 #                Devices[87].Update(0,str(L3_total_kvarh))
-                Devices[88].Update(0,str(Total_System_Active_Power)+";"+str(Total_System_Active_Power))
+#                Devices[88].Update(0,str(Total_System_Active_Power)+";"+str(Total_System_Active_Power))
 
 
 
