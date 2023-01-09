@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Eastron SDM630-Modbus 100A 3P4W SW:1.3 Smart Meter Three Phase Electrical System. The Python plugin for Domoticz
+Eastron SDM230-Modbus. The Python plugin for Domoticz
 Author: MFxMF
 Requirements: 
     1.python module minimalmodbus -> http://minimalmodbus.readthedocs.io/en/master/
@@ -8,7 +8,7 @@ Requirements:
     2.Communication module Modbus USB to RS485 converter module
 """
 """
-<plugin key="SDM630" name="Eastron SDM630-Modbus-min-" version="1.0.1" author="MFxMF">
+<plugin key="SDM630" name="Eastron SDM230-Modbus-min-" version="1.0.1" author="MFxMF">
     <params>
         <param field="SerialPort" label="Modbus Port" width="200px" required="true" default="/dev/ttyUSB0" />
         <param field="Mode1" label="Baud rate" width="40px" required="true" default="9600"  />
