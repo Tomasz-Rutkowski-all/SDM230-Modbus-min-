@@ -379,7 +379,7 @@ class BasePlugin:
 #                Devices[22].Update(0,str(Phase_Angle_L3))
 #                Devices[23].Update(0,str(Average_line_to_neutral_volts))
 #                Devices[24].Update(0,str(Average_line_current))
-#                Devices[25].Update(0,str(Sum_of_line_current))#  
+#                Devices[25].Update(0,str(Sum_of_line_current)) 
 #                Devices[26].Update(0,str(Total_System_Active_Power))
 #                Devices[27].Update(0,str(Total_System_Apparent_Power))
 #                Devices[28].Update(0,str(Total_System_Reactive_Power))
